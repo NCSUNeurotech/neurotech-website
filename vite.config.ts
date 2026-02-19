@@ -6,12 +6,9 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
-// Get base path from environment variable (for GitHub Pages) or default to root
-const base = process.env.BASE_PATH || '/'
-
 // https://vite.dev/config/
 export default defineConfig({
-  base: base,
+  base: '/',
   plugins: [
     react(),
     {
